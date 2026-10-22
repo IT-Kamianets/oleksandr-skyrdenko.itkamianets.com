@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>404 — Alex Skyrdenko</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: #090a08; color: #f3f0e7; font-family: Arial, Helvetica, sans-serif; overflow: hidden; }
+    .page { min-height: 100vh; display: grid; place-items: center; padding: 28px; position: relative; background: linear-gradient(90deg, transparent 0, transparent 24.8%, #1f201b 24.9%, transparent 25.1%, transparent 49.8%, #1f201b 49.9%, transparent 50.1%, transparent 74.8%, #1f201b 74.9%, transparent 75.1%); }
+    .brand { position: absolute; top: 28px; left: 32px; font: 19px Georgia, serif; letter-spacing: -.03em; }
+    .brand sup { color: #d5a818; font: 9px Arial, sans-serif; letter-spacing: .15em; margin-left: 6px; }
+    .content { max-width: 760px; text-align: center; position: relative; }
+    .eyebrow { color: #f0d76b; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; margin-bottom: 14px; }
+    h1 { margin: 0; font: 400 clamp(110px, 25vw, 260px)/.72 Georgia, serif; letter-spacing: -.1em; }
+    h1 i { color: #d5a818; font-style: italic; }
+    h2 { margin: 30px 0 12px; font: 400 clamp(33px, 5vw, 54px)/.98 Georgia, serif; letter-spacing: -.06em; }
+    p { color: #b7b4aa; font-size: 16px; line-height: 1.55; margin: 0 auto 28px; max-width: 410px; }
+    .home { display: inline-block; background: #d5a818; color: #171710; font-size: 11px; font-weight: 700; letter-spacing: .12em; padding: 14px 18px; text-decoration: none; text-transform: uppercase; transition: transform .2s ease; }
+    .home:hover { transform: rotate(-2deg) translateY(-2px); }
+    .disc { position: absolute; width: min(22vw, 190px); aspect-ratio: 1; border-radius: 50%; right: -100px; top: -78px; background: repeating-radial-gradient(circle, #10110e 0 5px, #282921 6px 7px); border: 14px solid #181914; opacity: .88; animation: spin 14s linear infinite; z-index: -1; }
+    .disc::after { content: 'ALEX\A SOUND'; white-space: pre; position: absolute; inset: 31%; display: grid; place-items: center; border-radius: 50%; background: #d5a818; color: #171710; font-size: 9px; letter-spacing: .12em; line-height: 1.35; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) { .disc { animation: none; } .home { transition: none; } }
+    @media (max-width: 520px) { .brand { left: 22px; top: 21px; } .disc { right: -50px; top: -110px; width: 160px; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="brand">Alex Skyrdenko<sup>01</sup></div>
+    <section class="content" aria-labelledby="page-title">
+      <div class="disc" aria-hidden="true"></div>
+      <div class="eyebrow">Signal lost · 404</div>
+      <h1 id="page-title">4<i>0</i>4</h1>
+      <h2>This track isn’t here.</h2>
+      <p>The page may have moved, or the link may be out of tune. Let’s get you back to the music.</p>
+      <a class="home" href="/">Back to home</a>
+    </section>
+  </main>
+</body>
+</html>
